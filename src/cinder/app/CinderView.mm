@@ -170,7 +170,7 @@
 
 - (void)makeCurrentContext
 {
-	mRenderer->startDraw();
+	//mRenderer->startDraw();
 }
 
 - (void)drawRect:(NSRect)rect
@@ -180,9 +180,9 @@
 	if( ! mReadyToDraw )
 		return;
 
-	mRenderer->startDraw();
+	//mRenderer->startDraw();
 	[mDelegate draw];
-	mRenderer->finishDraw();
+	//mRenderer->finishDraw();
 }
 
 - (void)setFrameSize:(NSSize)newSize
